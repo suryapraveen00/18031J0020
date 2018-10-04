@@ -18,8 +18,8 @@ public class Solution {
 		}
 		
 		for(int i=0;i<array.length-2;i++) {
-			for(int j=0;j<array.length-1;j++) {
-				for(int k=0;k<array.length;k++) {
+			for(int j=i+1;j<array.length-1;j++) {
+				for(int k=j+1;k<array.length;k++) {
 					int a =array[i];
 					int b=array[j];
 					int c =array[k];
@@ -29,7 +29,7 @@ public class Solution {
 				}
 			}
 		}
-		System.out.println("Number of 3sum values "+count);
+		System.out.println(count);
 		
 	}
 }
